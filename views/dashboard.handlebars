@@ -1,0 +1,14 @@
+<div class="container">
+  <button id="new-post">Add New Post</button>
+  {{#each posts}}
+    <div class="post">
+      <h2>{{this.title}}</h2>
+      <p>{{this.content}}</p>
+      <div class="meta">
+        <span>Posted by {{this.user.username}} on {{this.createdAt}}</span>
+        <button class="update-post" data-id="{{this.id}}">Update</button>
+        <button class="delete-post" data-id="{{this.id}}">Delete</button>
+      </div>
+    </div>
+  {{/each}}
+</div>

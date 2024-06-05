@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d3e0dc;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2e2b2b;
+  color: #f3f7f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+header nav {
+  display: flex;
+  gap: 20px;
+}
+
+header nav a {
+  color: #f3f7f0;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+header h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.post {
+  background-color: #d3e0dc;
+  border: 2px solid #2e2b2b;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.post h2 {
+  background-color: #2e2b2b;
+  color: #d3e0dc;
+  margin: 0;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+}
+
+.post p {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #e8f1f2;
+  border-radius: 0 0 5px 5px;
+}
+
+.post .meta {
+  background-color: #2e2b2b;
+  color: #d3e0dc;
+  padding: 10px;
+  text-align: right;
+  border-radius: 0 0 5px 5px;
+}
+
+.post .meta span {
+  margin-right: 10px;
+}
+
+form {
+  background-color: #d3e0dc;
+  border: 2px solid #2e2b2b;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+form input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #2e2b2b;
+  border-radius: 5px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #2e2b2b;
+  color: #d3e0dc;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+button.update-post, button.delete-post {
+  margin-left: 5px;
+  background-color: #2e2b2b;
+  color: #d3e0dc;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.update-post:hover, button.delete-post:hover {
+  background-color: #444;
+}
+
+#new-post {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #2e2b2b;
+  color: #d3e0dc;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  text-align: center;
+}
+
+#new-post:hover {
+  background-color: #444;
+}
