@@ -8,7 +8,11 @@ const sequelize = require('./config/connection'); // Corrected path
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
+
 
 const sess = {
   secret: 'Super secret secret',
