@@ -47,7 +47,7 @@ const seedDatabase = async () => {
 
   await Post.bulkCreate(postData);
   await Comment.bulkCreate(commentData);
-
+console.log("Database Seeded")
   process.exit(0);
 };
 
